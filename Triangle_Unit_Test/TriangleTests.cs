@@ -79,7 +79,89 @@ namespace Triangle_Unit_Test
             Assert.AreEqual(expected, actual);
         }
 
+        // 5 Tests for Valid Scalene Triangle
+        [Test]
+        public void ValidTriangle_Input3and4and5_OutputScalene()
+        {
+            // Arrange
+            int firstSide = 3;
+            int secondSide = 4;
+            int thirdSide = 5;
+            string expected = "Scalene triangle";
+
+            // Act
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void ValidTriangle_Input8and6and7_OutputScalene()
+        {
+            // Arrange
+            int firstSide = 8;
+            int secondSide = 6;
+            int thirdSide = 7;
+            string expected = "Scalene triangle";
+
+            // Act
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void ValidTriangle_Input10and12and15_OutputScalene()
+        {
+            // Arrange
+            int firstSide = 10;
+            int secondSide = 12;
+            int thirdSide = 15;
+            string expected = "Scalene triangle";
+
+            // Act
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void ValidTriangle_Input9and14and16_OutputScalene()
+        {
+            // Arrange
+            int firstSide = 9;
+            int secondSide = 14;
+            int thirdSide = 16;
+            string expected = "Scalene triangle";
+
+            // Act
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void ValidTriangle_Input13and20and18_OutputScalene()
+        {
+            // Arrange
+            int firstSide = 13;
+            int secondSide = 20;
+            int thirdSide = 18;
+            string expected = "Scalene triangle";
+
+            // Act
+            string actual = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 
 }
+
 
